@@ -1,0 +1,6 @@
+query PostsForDisplay {
+posts {
+    id,
+    content,
+    views
+}}

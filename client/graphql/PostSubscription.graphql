@@ -1,0 +1,8 @@
+subscription onPostAdded{
+    postAdded{
+        id,
+        content,
+        views
+    }
+}
+

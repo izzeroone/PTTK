@@ -1,0 +1,6 @@
+{
+  "name": "InputForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./InputForm.js"
+}

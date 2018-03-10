@@ -1,0 +1,7 @@
+mutation createPost($content: String!, $views: Int!) {
+    createPost(input : {content: $content, views: $views}){
+        id,
+        content,
+        views
+    }
+}

@@ -1,0 +1,8 @@
+
+subscription onPostChanged{
+    postChanged{
+        id,
+        content,
+        views
+    }
+}

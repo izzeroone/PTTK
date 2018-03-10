@@ -1,0 +1,30 @@
+input PostInput {
+    content: String
+    views: Int
+}
+
+type Post {
+    id: ID
+    content: String
+    views: Int
+}
+
+type Query {
+    posts(views: Int): [Post]
+}
+
+type Mutation {
+    createPost(input: PostInput) : Post
+    deletePost(id: ID) : Post
+}
+
+type Subscription{
+    postAdded: Post
+    postChanged: [Post]
+}
+
+schema {
+    query: Query
+    mutation: Mutation
+    subscription: Subscription
+}
