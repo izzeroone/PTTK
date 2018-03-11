@@ -1,21 +1,24 @@
-# coreui-meteor-react
-This is an implementation of the coreui (http://coreui.io/) admin template for meteor-react projects.
+# Phân tích thiết kế hệ thống thông tin
+## Yêu cầu
+Yêu cầu cài đặt mariadb hoặc mysql
 
-## Live Demo
+## Cấu hình
+Mở file input/api/server/connectors.js
 
-http://coreui.io/demo/React_Demo
+const db = new Sequelize('QLCL', "zerotwo", "002", {
+    host: 'localhost',
+    dialect: 'mysql'
+});
 
-## Installation
+Sửa QLCL thành tên database
+zerotwo thành username đăng nhập
+002 là mật khẩu
 
-$ sudo curl https://install.meteor.com/ | sh
-
-$ git clone https://github.com/matiasmagni/coreui-meteor-react.git
-
-$ cd coreui-meteor-react
+## Cài đặt
 
 $ meteor npm install --no-optional
 
-## Deployment
+## Chạy
 
 $ meteor
 
